@@ -10,6 +10,7 @@ ModelImporter:
     100008: handL
     100010: handR
     100012: gun1
+    100014: pCube1
     400000: //RootNode
     400002: pCube3
     400004: pCube4
@@ -17,6 +18,7 @@ ModelImporter:
     400008: handL
     400010: handR
     400012: gun1
+    400014: pCube1
     2100000: lambert1
     2100002: handleMat
     2100004: gunButeMat
@@ -28,6 +30,7 @@ ModelImporter:
     2300008: handL
     2300010: handR
     2300012: gun1
+    2300014: pCube1
     3300000: pCube3
     3300002: pCube4
     3300004: pCube6
@@ -35,6 +38,7 @@ ModelImporter:
     3300008: handL
     3300010: handR
     3300012: gun1
+    3300014: pCube1
     4300000: pCube3
     4300002: pCube4
     4300004: pCube6
@@ -42,6 +46,7 @@ ModelImporter:
     4300008: handL
     4300010: handR
     4300012: gun1
+    4300014: pCube1
   externalObjects: {}
   materials:
     importMaterials: 1

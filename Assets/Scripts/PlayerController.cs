@@ -16,11 +16,15 @@ public class PlayerController : MonoBehaviour
 	float stunTime;
 	public bool grounded = false;
 	public GameObject gun;
+
+	public GameObject eyes;
 	void Start()
 	{
 		animator = GetComponent<Animator>();
 		camOffset = cam.transform.position - transform.position;
 		rb = GetComponent<Rigidbody>();
+		stepSounds = Resources.LoadAll<AudioClip>("Audio/house");
+		audioS = GetComponent<AudioSource>();
 
 	}
 	void Update()
@@ -30,6 +34,7 @@ public class PlayerController : MonoBehaviour
 		{
 			Shoot();
 		}
+
 	}
 
 	void Shoot()
@@ -100,6 +105,15 @@ public class PlayerController : MonoBehaviour
 		}
 		rb.velocity = v;
 	}
+	AudioClip[] stepSounds;
+	AudioSource audioS;
+	//called by animation
+	//makes sound
+	void PlayStep()
+	{
+		audioS.PlayOneShot(stepSounds[Random.Range(0, stepSounds.Length - 1)]);
+	}
+
 }
 
 public class Move
