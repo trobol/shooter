@@ -22,7 +22,6 @@ public class BloodStain : MonoBehaviour
 		part.GetCollisionEvents(c, collisionEvents);
 		foreach (ParticleCollisionEvent e in collisionEvents)
 		{
-
 			Vector3 p = e.intersection;
 			p.y = 0.01f;
 			Debug.Log(LayerMask.NameToLayer("BloodStain"));
